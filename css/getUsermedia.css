@@ -1,3 +1,4 @@
+*{margin:0px;padding:0px;}
 .iframeContent{
     display: none;
     border:0px;
@@ -63,8 +64,8 @@ max-width: 100%;
 body {
 font-family: 'Roboto', sans-serif;
 margin: 0;
-padding: 1em;
 word-break: break-word;
+overflow: hidden;
 }
 
 button {
@@ -97,7 +98,7 @@ background-color: #d84a38;
 canvas {
   background-color: #ccc;
   max-width: 100%;
-  width: 100%;
+  height: 284px;
 }
 
 code {
@@ -107,7 +108,7 @@ font-weight: 400;
 
 div#container {
 margin: 0 auto 0 auto;
-padding: 1em 1.5em 1.3em 1.5em;
+height: 284px;
 }
 
 div#links {
@@ -139,11 +140,6 @@ padding: 10px 0 0 0;
 white-space: nowrap;
 }
 
-html {
-/* avoid annoying page width change
-when moving from the home page */
-overflow-y: scroll;
-}
 
 img {
 border: none;
@@ -209,9 +205,9 @@ textarea {
 }
 
 video {
-  background: #222;
-  margin: 0 0 20px 0;
   width: 100%;
+  background:#000;
+  height: 284px;
 }
 
 @media screen and (max-width: 650px) {
