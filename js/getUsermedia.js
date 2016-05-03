@@ -1,6 +1,7 @@
 window.onmessage = function(ev){
   if(ev.data == 'photo'){
      openVideo();
+     alert(888)
   }else if(ev.data == 'startRecording'){
     startRecording()
   }else if(ev.data == 'stopRecording'){
@@ -9,7 +10,6 @@ window.onmessage = function(ev){
     iClick()
   }
 }
-openVideo()
 var video = document.querySelector('video');
 var canvas = window.canvas = document.querySelector('canvas');
 var imgdata= document.getElementById("imgdata");
