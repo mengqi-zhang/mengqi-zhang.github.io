@@ -1,7 +1,6 @@
 window.onmessage = function(ev){
   if(ev.data == 'photo'){
      openVideo();
-     alert(888)
   }else if(ev.data == 'startRecording'){
     startRecording()
   }else if(ev.data == 'stopRecording'){
@@ -45,7 +44,7 @@ function iClick() {
     canvas.height = video.videoHeight;
     canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
     convertCanvasToImage(canvas);
-    parent.window.postMessage(imgdata.value,'http://localhost:8882/main.html');
+    parent.window.postMessage(imgdata.value,'http://localhost:8881/main.html');
 };
 function convertCanvasToImage(oCanvas) {
     imgdata.value=oCanvas.toDataURL();
